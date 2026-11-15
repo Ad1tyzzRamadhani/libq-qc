@@ -13,8 +13,7 @@ bool strcmp(char* s1, char* s2) {
         char c2 = s2[i];
         
         if (c1 != c2) {
-            if (c1 < c2) { return false; }
-            return true;
+            return false;
         }
         if (c1 == 0) {
             return true;
