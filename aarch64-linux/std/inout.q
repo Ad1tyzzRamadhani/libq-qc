@@ -1,4 +1,4 @@
-int strlen(char* s) {
+int strlen(const char* s) {
     int len = 0;
     while (s[len] != 0) {
         len += 1;
@@ -6,7 +6,7 @@ int strlen(char* s) {
     return len;
 }
 
-bool strcmp(char* s1, char* s2) {
+bool strcmp(const char* s1, const char* s2) {
     int i = 0;
     while (true) {
         char c1 = s1[i];
@@ -23,7 +23,7 @@ bool strcmp(char* s1, char* s2) {
     return false;
 }
 
-void concat(char* dest, char* src1, char* src2) {
+void concat(char* dest, const char* src1, const char* src2) {
     int i = 0;
     int j = 0;
     
